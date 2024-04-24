@@ -1,0 +1,29 @@
+.menu {
+    background-color: black;
+    padding: 15px;     /* Para que el fondo de menu sea mas ancha */
+    display: flex;
+    justify-content: space-between; /* Alinea elementos a los extremos */
+    align-items: center; /* Centra verticalmente los elementos */
+}
+
+.menu-parte-left {
+    color: #fff;
+    text-decoration: none; /* Elimina cualquier decoración de subrayado */
+    margin-right: 18px;
+}
+
+.menu-parte-right {
+    display: flex;
+    text-decoration: none; 
+    margin-right: 18px;
+}
+
+.menu-letra {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 18px;
+}
+
+.menu-letra:hover {
+    color: lawngreen; /* Cambia el color al pasar el mouse sobre los enlaces */
+}
