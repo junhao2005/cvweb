@@ -1,9 +1,11 @@
+
 .menu {
     background-color: black;
     padding: 15px;     /* Para que el fondo de menu sea mas ancha */
     display: flex;
     justify-content: space-between; /* Alinea elementos a los extremos */
     align-items: center; /* Centra verticalmente los elementos */
+    width: 98,5%;
 }
 
 .menu-parte-left {
@@ -26,4 +28,86 @@
 
 .menu-letra:hover {
     color: lawngreen; /* Cambia el color al pasar el mouse sobre los enlaces */
+}
+
+
+.fondo-gif {
+    width: 100%;
+    height: 70vh;
+    /* Establece el fondo de pantalla GIF */
+    background-image: url('../img/fondo.gif');
+    /* Ajusta la posición y tamaño del fondo */
+    background-size: cover; /* o contain, dependiendo de tus preferencias */
+    background-position: center;
+    /* Evita que el fondo se repita */
+    background-repeat: no-repeat;
+    color: white;
+    text-align: center;
+}
+
+.img-hao {
+    width: 20%;
+    height: auto;
+}
+
+
+
+
+.rowflex {
+    display: flex;
+    justify-content: center;
+}
+
+.col2 {
+    width: 50%;
+    float: left;             /* para que se ponga a izquierda */
+}
+
+.col2-right {
+    width: 50%;
+    float: right;            /* para que se ponga a derecha */
+}
+
+.titu-center {
+    text-align: center;
+}
+
+.texto-estrecho {
+    font-stretch: condensed; /* Hace que la fuente sea más estrecha */
+    letter-spacing: -1px; /* Reduce el espacio entre las letras */
+    word-spacing: -2px; /* Reduce el espacio entre las palabras */
+    font-size: 30px;
+}
+
+.color-fondo {
+    background-color: black;
+    color: white;
+}
+
+.col4 {
+    width: 25%;
+    float: left;
+    /* padding: 40px; */
+    text-align: center;
+}
+
+.col4-juntos {
+    width: 25%;
+}
+
+.img-col4-juntos {
+    width: 100%;
+    height: auto;
+}
+
+.img-col4 {
+    width: 70%;
+    height: auto;
+}
+
+.col1 {
+    width: 100%;
+    color: black;
+    font-size: 35px;
+    text-align: center;
 }
