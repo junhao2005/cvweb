@@ -11,7 +11,7 @@
 .menu-parte-left {
     color: #fff;
     text-decoration: none; /* Elimina cualquier decoración de subrayado */
-    margin-right: 18px;
+    margin-right: 20px;
 }
 
 .menu-parte-right {
@@ -23,7 +23,7 @@
 .menu-letra {
     color: #fff;
     text-decoration: none;
-    margin-right: 18px;
+    margin-right: 20px;
 }
 
 .menu-letra:hover {
@@ -43,14 +43,16 @@
     background-repeat: no-repeat;
     color: white;
     text-align: center;
+    margin-top: -3%;
 }
+
+
 
 .img-hao {
     width: 20%;
     height: auto;
+    border-radius: 10%;
 }
-
-
 
 
 .rowflex {
@@ -100,8 +102,9 @@
 }
 
 .img-col4 {
-    width: 70%;
-    height: 70%;
+    width: 75%;
+    height: auto;
+    border-radius: 10%;
 }
 
 .col4 {
@@ -118,4 +121,166 @@
     color: white;
     font-size: 35px;
     text-align: center;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+}
+
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+   
+    border: 1px solid #ddd;
+    margin: 0 4px;
+}
+
+.pagination a.active {
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+}
+
+.pagination a:hover:not(.active) {
+    background-color: #ddd;
+}
+
+
+.color-pie {
+    font-size: 10px;
+    background-image: url('../img/fondo.gif'); 
+    color: white;
+}
+
+.boton-descarga {
+    display: inline-block;
+    background-color: grey;
+    text-align: center;
+    padding: 15px 24px;
+    border-radius: 4px;
+}
+
+.boton-descarga:hover {
+    background-color: blue;
+}
+
+
+
+
+.estudio-fondo {
+    width: 100%;
+    height: 70vh;
+    /* Establece el fondo de pantalla GIF */
+    background-image: url('../img/fondo.gif');
+    /* Ajusta la posición y tamaño del fondo */
+    background-size: cover; /* o contain, dependiendo de tus preferencias */
+    background-position: center;
+    /* Evita que el fondo se repita */
+    background-repeat: no-repeat;
+    color: white;
+}
+
+.titu-estudio {
+    font-size: 300%;
+    text-align: center;
+    margin-top: -3%;
+
+}
+
+.titu-ubi {
+    font-size: 200%;
+    text-align: center;
+    margin-top: -5%;
+    padding-top: 2%;
+}
+
+.img-ubi {
+    width: 500px;
+    height: 250px;
+
+}
+
+.sinlinea {
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 500px) {              /* Media queries para pantalla pequeño de 700px */
+
+
+
+    
+    .img-hao {
+        width: 60%;
+        height: auto;
+    }
+    
+    
+    
+    
+    .rowflex {
+        display: flex;
+        justify-content: center;
+    }
+
+    .col1 {
+        width: 100%;
+        display: flex;
+    }
+    
+    .col2 {
+        width: 100%;
+        display: flex;
+    }
+    
+    .col2-right {
+        width: 100%;         
+    }
+    
+    .titu-center {
+        text-align: center;
+    }
+    
+    
+    
+    .row {
+        display: table;             /*hace que un elemento HTML actúe como una tabla*/
+        clear: both;                     /* para que no se mueva */
+    }
+    
+    .row4col {
+        display: table;
+    }
+    
+
+    
+    .img-col4 {
+        width: 100%;
+        height: auto;
+    }
+    
+    .col4 {
+        width: 50%;
+    }
+    
+    
+    .pagination {
+        display: table;
+        justify-content: center;
+    }
+    
+    .pagination a {
+        float: left;
+        padding: 5px 10px;
+    }
+      
 }
