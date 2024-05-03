@@ -79,7 +79,7 @@ body{
 .texto-estrecho {
     margin-left: 3%;
     margin-right: 3%;
-    font-size: 25px;
+    font-size: 23px;
 }
 
 .color-fondo {
@@ -234,27 +234,14 @@ body{
 
 @media screen and (max-width: 500px) {              /* Media queries para pantalla pequeño de 500px */
 
-    
     body{
         margin-left: 3%;
         margin-right: 3%;
     }
 
-    .pa-derecha{
-        margin-left: 10%;
+    .titi{
+        font-size: 100%;
     }
-
-    .menu-parte-left {
-        margin-right: 20px;
-    }
-    
-    .menu-parte-right {
-        display: flex;
-        text-decoration: none; 
-        margin-right: 18px;
-    }
-    
-    
     
     .fondo-gif {
         margin-top: -6%;
@@ -267,22 +254,30 @@ body{
     }
     
     
+    .pa-izquierda{
+        margin-left: 10%;
+
+    }
+
     .rowflex {
         display: table;
+        font-size: 20px;
     }
+   
+    .col2 {
+        width: 100%;
+    }
+   
+    .col2-right {
+        width: 100%;
+    }
+
 
     .col1 {
         text-align: center;
     }
     
-    .col2 {
-        width: 100%;
-    }
-    
-    .col2-right {
-        width: 100%;
-    }
-    
+
     
     .texto-estrecho {
         font-size: 17px;
@@ -296,6 +291,7 @@ body{
     
     .row {
         display: table;             /*hace que un elemento HTML actúe como una tabla*/
+        text-align: center;
     }
     
     
@@ -305,7 +301,7 @@ body{
     }
     
     .img-col4 {
-        width: 90%;
+        width: 100%;
         display: table;
     }
     
@@ -342,20 +338,7 @@ body{
         border-radius: 4px;
     }
     
-    
-    .estudio-fondo {
-        width: 100%;
-        height: 50%;
-        /* Establece el fondo de pantalla GIF */
-        background-image: url('../img/fondo.gif');
-        /* Ajusta la posición y tamaño del fondo */
-        background-size: cover; /* o contain, dependiendo de tus preferencias */
-        background-position: center;
-        /* Evita que el fondo se repita */
-        background-repeat: no-repeat;
-        color: white;
-    }
-    
+       
     .titu-estudio {
         font-size: 300%;
         text-align: center;
@@ -373,16 +356,12 @@ body{
     
     }
     
-    .sinlinea {
-        text-decoration: none;
-    }
     
     
     .ancho {                           /* ancha de pagina */
         width: 80%;
         font-size: 26px;
     }
-    
     
     
     .img-expe {
