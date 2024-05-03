@@ -1,7 +1,7 @@
 
 .menu {
     background-color: black;
-    padding: 15px;     /* Para que el fondo de menu sea mas ancha */
+    padding: 1%;     /* Para que el fondo de menu sea mas ancha */
     display: flex;
     justify-content: space-between; /* Alinea elementos a los extremos */
     align-items: center; /* Centra verticalmente los elementos */
@@ -75,10 +75,9 @@
 }
 
 .texto-estrecho {
-    font-stretch: condensed; /* Hace que la fuente sea más estrecha */
-    letter-spacing: -1px; /* Reduce el espacio entre las letras */
-    word-spacing: -2px; /* Reduce el espacio entre las palabras */
-    font-size: 30px;
+    margin-left: 3%;
+    margin-right: 3%;
+    font-size: 25px;
 }
 
 .color-fondo {
@@ -169,7 +168,6 @@
 
 
 
-
 .estudio-fondo {
     width: 100%;
     height: 80vh;
@@ -193,7 +191,7 @@
 .titu-ubi {
     font-size: 200%;
     text-align: center;
-    margin-top: -5%;
+    margin-top: -4%;
     padding-top: 2%;
 }
 
@@ -209,17 +207,18 @@
 
 
 .ancho {                           /* ancha de pagina */
-        margin-left: 7%;
-        margin-right: 7%;
+    margin-left: 4%;
+    margin-right: 4%;
+    font-size: 26px;
 }
 
 
 
 .img-expe {
-    width: 60%;
+    width: 70%;
     height: auto;
     border-radius: 10%;
-    margin-top: -3%;
+    margin-top: -2%;
 }
 
 .juntar{
@@ -231,73 +230,174 @@
 
 
 
-@media screen and (max-width: 500px) {              /* Media queries para pantalla pequeño de 700px */
-
-
+@media screen and (max-width: 500px) {              /* Media queries para pantalla pequeño de 500px */
 
     
-    .img-hao {
-        width: 60%;
-        height: auto;
+    body{
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+
+    .pa-derecha{
+        margin-left: 10%;
+    }
+
+    .menu-parte-left {
+        margin-right: 20px;
+    }
+    
+    .menu-parte-right {
+        display: flex;
+        text-decoration: none; 
+        margin-right: 18px;
     }
     
     
+    
+    .fondo-gif {
+        margin-top: -6%;
+    }
+    
+    
+    
+    .img-hao {
+        width: 55%;
+    }
     
     
     .rowflex {
-        display: flex;
-        justify-content: center;
+        display: table;
     }
 
     .col1 {
-        width: 100%;
-        display: flex;
+        text-align: center;
     }
     
     .col2 {
         width: 100%;
-        display: flex;
     }
     
     .col2-right {
-        width: 100%;         
-    }
-    
-    .titu-center {
-        text-align: center;
+        width: 100%;
     }
     
     
+    .texto-estrecho {
+        font-size: 17px;
+
+    }
+    
+    iframe {
+        width: 90%;
+        height: auto;
+    }
     
     .row {
         display: table;             /*hace que un elemento HTML actúe como una tabla*/
-        clear: both;                     /* para que no se mueva */
     }
     
-    .row4col {
-        display: table;
-    }
     
-
+    
+    .colorcol4 {
+        background-color: black;             /* color fondo */
+    }
     
     .img-col4 {
-        width: 100%;
-        height: auto;
+        width: 90%;
+        display: table;
     }
     
     .col4 {
         width: 50%;
     }
     
+    .col1 {
+        width: 100%;
+        font-size: 35px;
+        text-align: center;
+    }
     
     .pagination {
-        display: table;
+        display: flex;
         justify-content: center;
     }
     
     .pagination a {
-        float: left;
-        padding: 5px 10px;
+        color: black;
+        padding: 1px 5px;
+        text-decoration: none;
+        border: 1px solid #ddd;
+        margin: 0 4px;
     }
-      
+    
+
+    
+    .boton-descarga {
+        display: table;
+        background-color: grey;
+        text-align: center;
+        padding: 5px 8px;
+        border-radius: 4px;
+    }
+    
+    
+    .estudio-fondo {
+        width: 100%;
+        height: 50%;
+        /* Establece el fondo de pantalla GIF */
+        background-image: url('../img/fondo.gif');
+        /* Ajusta la posición y tamaño del fondo */
+        background-size: cover; /* o contain, dependiendo de tus preferencias */
+        background-position: center;
+        /* Evita que el fondo se repita */
+        background-repeat: no-repeat;
+        color: white;
+    }
+    
+    .titu-estudio {
+        font-size: 300%;
+        text-align: center;
+        margin-top: -2%;
+    
+    }
+    
+    .titu-ubi {
+        font-size: 150%;
+    }
+    
+    .img-ubi {
+        width: 350px;
+        height: 250px;
+    
+    }
+    
+    .sinlinea {
+        text-decoration: none;
+    }
+    
+    
+    .ancho {                           /* ancha de pagina */
+        width: 80%;
+        font-size: 26px;
+    }
+    
+    
+    
+    .img-expe {
+        width: 70%;
+        height: auto;
+        border-radius: 10%;
+        margin-top: -2%;
+    }
+    
+    .juntar{
+        margin-top: -7%;
+    }
+    
+    
+    .color-pie {
+        font-size: 10px;
+        width: 100%;
+    }
+    
 }
